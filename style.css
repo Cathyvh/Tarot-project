@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Roboto',
+        sans-serif;
+
+}
+
+body {
+    background-color: #0D324D;
+}
+
+.grid-container {
+
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2.5fr 0.8fr;
+    grid-template-areas:
+        "nav nav nav nav nav"
+        "tarot-cards tarot-cards tarot-cards tarot-cards tarot-cards"
+        "description description description description description";
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #7F5A83;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#question-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#current-question {
+
+    font-size: 3em;
+    padding-top: 50px;
+    width: 100%;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+h1 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.card-heading {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    background-color: #A188A6;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 50px;
+
+}
+
+button:disabled {
+    color: silver;
+}
+
+img {
+    display: flex;
+    height: 350px;
+    align-items: center;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.48);
+
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+
+.tarot-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 80px 40px;
+    height: 100%;
+    grid-template-areas:
+        "card0 card1 card2 card3 card4";
+    grid-area: tarot-cards;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    justify-content: space-evenly;
+
+}
+
+#meaning-text {
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+#description {
+    display: grid;
+    grid-area: description;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20em;
+}
+
+#card0 {
+    grid-area: card0;
+
+}
+
+#card1 {
+
+    grid-area: card1;
+
+}
+
+#card2 {
+
+    grid-area: card2;
+}
+
+#card3 {
+
+    grid-area: card3;
+}
+
+#card4 {
+
+    grid-area: card4;
+}
